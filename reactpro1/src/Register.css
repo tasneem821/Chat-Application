@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+      url('https://wallpapers.ispazio.net/wp-content/uploads/2020/03/IMG_4581-768x1365.jpg') no-repeat center center/cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+  
+  .login-card {
+    width: 90%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.30);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .login-card h1 {
+    color: #ffffff;
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
+    text-align: center;
+    margin-bottom: 1.75rem;
+  }
+  
+  .name-fields {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.25rem;
+  }
+  
+  .name-fields .input-group {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .input-group.phone-input::before {
+    content: "+";
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    z-index: 2;
+  }
+  
+  .input-group.phone-input input,
+  .login-form input[type="tel"] {
+    padding-left: 3rem;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #00a884;
+    box-shadow: 0 0 0 2px rgba(0, 168, 132, 0.2);
+  }
+  
+  .login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .error-message {
+    margin-top: 6px;
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid #ff4d4d;
+    border-radius: 6px;
+    padding: 8px 10px 8px 35px;
+    color: #ff4d4d;
+    font-size: 0.85rem;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+    
+  }
+  
+  .error-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 0.875rem;
+    background: #00a884;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .login-button:hover {
+    background: #007d66;
+  }
+  
+  .register-prompt {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+  
+  .register-link {
+    color: #00a884;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 2rem;
+    }
+    .name-fields {
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+  }
