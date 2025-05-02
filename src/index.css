@@ -6,7 +6,11 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 body{
-  background-image: url(../public/WhatsApp\ Image\ 2025-04-26\ at\ 23.03.15_724d12e1.jpg);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('https://wallpapers.ispazio.net/wp-content/uploads/2020/03/IMG_4581-768x1365.jpg') no-repeat center center/cover;
 display: flex;
 align-items: center;
 justify-content: center;
