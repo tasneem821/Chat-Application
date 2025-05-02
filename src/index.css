@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body{
+  background-image: url(../public/WhatsApp\ Image\ 2025-04-26\ at\ 23.03.15_724d12e1.jpg);
+display: flex;
+align-items: center;
+justify-content: center;
+background-size: cover;
+height: 100vh;
+color: white;
+}
+.container{
+  width: 90vw;
+  height: 90vh;
+  background-color:rgba(32, 44, 51, 0.75);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  
+}
