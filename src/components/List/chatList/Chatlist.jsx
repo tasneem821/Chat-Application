@@ -6,6 +6,11 @@ const Chatlist = () => {
 
   const contacts = [
     {
+      name: "Jane Doe",
+      message: "",
+      avatar: "/avatar.png",
+    },
+    {
       name: "Sarah Johnson",
       message: "Can we meet tomorrow?",
       avatar: "/profile-1.jpg",
